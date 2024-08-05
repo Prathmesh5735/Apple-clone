@@ -1,0 +1,37 @@
+{
+  "Storedata": {
+    "slider1": [
+      {
+        "url": "ipad-slider1.png"
+      },
+      {
+        "url": "ipadair-slider1.png"
+      },
+      {
+        "url": "iphone-slider1.png"
+      },
+      {
+        "url": "newphoria-slider1.png"
+      },
+      {
+        "url": "Save-slider1.png"
+      },
+      {
+        "url": "pencil-slider1.png"
+      },
+      {
+        "url": "watch-slider1.png"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
