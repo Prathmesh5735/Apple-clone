@@ -111,7 +111,7 @@
   height: 100%;
 }
 
-.section-2 .swiper-slide {
+.section-2 .swiper-slide{
   position: relative;
   text-align: center;
   font-size: 18px;
@@ -176,4 +176,25 @@
   /* border: 2px solid red; */
   height:324px;
   width: 100%;
+}
+
+
+/* ipad comp styling */
+.ipad-comp .ipad-slider .swiper-slide{
+  width: 372px;
+  height: 680px;
+  /* border: 2px solid red; */
+}
+.ipad-comp .ipad-slider .swiper-slide img{
+  border-radius: 28px;
+}
+.ipad-comp .sec2-img li{
+  width: 372px;
+  /* border: 2px solid red; */
+}
+.ipad-comp .sec2-img li .sec2-li-img{
+  width: 271px;
+  /* border: 2px solid red; */
+  height: 307px ;
+  margin: auto;
 }

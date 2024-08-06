@@ -1,16 +1,16 @@
 import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaCirclePlus, FaCreditCard } from "react-icons/fa6";
 import { FaLaptopHouse } from "react-icons/fa";
 import { RiArrowDropRightLine, RiComputerFill } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
 import { HiUsers } from "react-icons/hi";
 // Import Swiper styles
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 import Accordion from 'react-bootstrap/Accordion';
 // import required modules
-import { Pagination } from 'swiper/modules';
 import FooterComponent from "../components/FooterComponent";
 const Mac = () => {
   return (
