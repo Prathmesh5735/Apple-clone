@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .navbar .container {
   padding-top: 10px;
 }
+
 .navbar a {
   text-decoration: none;
   color: gray;
@@ -15,6 +18,7 @@
   font-style: normal;
   font-family: "Poppins", sans-serif;
 }
+
 .dropdownitems {
   position: absolute;
   width: 100%;
@@ -49,46 +53,109 @@
 }
 
 .iphone15 {
-    height: 80vh;
+  height: 80vh;
 }
 
 .slider {
-  margin:0 20px;
-  overflow:"hidden";
-  padding:2rem 0;
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
 }
 
 .slider img {
   width: 100%;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .react-multi-carousel-list {
-padding: 0rem 0 2rem 0;
+  padding: 0rem 0 2rem 0;
 }
 
-.custom-dot-list-style button{
-border: none;
-background: rgb(255, 68, 68);
-}
-.react-multi-carousel-dot.react-multi-carousel-dot--active button{
-background: rgb(255, 68, 68) !important;
+.custom-dot-list-style button {
+  border: none;
+  background: rgb(255, 68, 68);
 }
 
-.linear{
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: rgb(255, 68, 68) !important;
+}
+
+.linear {
   font-size: 30px;
-  background: -webkit-linear-gradient(#e652e1,#d44c67, #7459d3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#e652e1, #d44c67, #7459d3);
 }
 
 /* mac comp styling */
-.section-1 .sec1-img{
+.section-1 .sec1-img {
   height: 680px;
+  position: relative;
 }
-.sec1-img img{
+
+.sec1-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius:50px;
+  border-radius: 50px;
+}
+
+.sec1-img .img-content {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* section 2 swiper */
+.section-2 .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.section-2 .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 372px;
+  height: 680px;
+}
+.section-2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+}
+.add-icon{
+  position: absolute;
+  color: white;
+  /* border: 2px solid red; */
+  font-size: 40px;
+  right: 5%;
+  bottom: 2%;
+  cursor: pointer;
+}
+/*mac section 3 styling */
+.section-3 .sec3-img{
+  border: 2px solid red;
+  width: 50%;
+}
+.section-3 .sec3-pr-info .sec3-pr-info-img{
+  width:372px;
+  border: 2px solid blue;
+}
+.section-3 .sec3-pr-info .sec3-pr-info-content p:first-child{
+  font-size: 28px;
+}
+
+/* mac section 4 styling */
+.section-4 .swiper-slide{
+  width: 372px;
+  height: 284px;
+  padding: 10px;
+  background-color: #ddd;
+  border: 2px solid red;
 }
