@@ -140,12 +140,11 @@
 }
 /*mac section 3 styling */
 .section-3 .sec3-img{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 50%;
 }
 .section-3 .sec3-pr-info .sec3-pr-info-img{
   width:372px;
-  border: 2px solid blue;
 }
 .section-3 .sec3-pr-info .sec3-pr-info-content p:first-child{
   font-size: 28px;
@@ -157,5 +156,24 @@
   height: 284px;
   padding: 10px;
   background-color: #ddd;
-  border: 2px solid red;
+  border-radius: 28px;
+  /* border: 2px solid red; */
+}
+
+/* mac section 5 styling */
+.section-5 .sec-5-info{
+  height: 784px;
+}
+.section-5 .sec5-info .sec5-div{
+  width: 50%;
+}
+/* mac section 6 styling */
+.section-6 .sec6-img div{
+  /* border: 2px solid red; */
+  width: 50%;
+}
+.section-6 .sec6-img div div{
+  /* border: 2px solid red; */
+  height:324px;
+  width: 100%;
 }

@@ -1,16 +1,17 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FaCirclePlus, FaCreditCard} from "react-icons/fa6";
-import { FaLaptopHouse} from "react-icons/fa";
+import { FaCirclePlus, FaCreditCard } from "react-icons/fa6";
+import { FaLaptopHouse } from "react-icons/fa";
 import { RiArrowDropRightLine, RiComputerFill } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
 import { HiUsers } from "react-icons/hi";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import Accordion from 'react-bootstrap/Accordion';
 // import required modules
 import { Pagination } from 'swiper/modules';
+import FooterComponent from "../components/FooterComponent";
 const Mac = () => {
   return (
     <div>
@@ -18,8 +19,8 @@ const Mac = () => {
         <h1>Mac</h1>
         <p><b>If you can dream it,<br /> Mac can do it.</b></p>
       </div>
-      <div className="video" style={{ height: '834px', border: "2px solid red" }}>
-        <video className="welcome-video-video" muted="" playsInline="" data-inline-media="" loop="" preload="none" role="img" aria-label="A video showcasing the lineup of Mac products: Showcases the MacBook Air, MacBook Air 13, MacBook Pro, iMac, Mac mini, Mac Studio, and Studio Display." src="https://www.apple.com/105/media/us/mac/family/2024/60fc0159-4236-4a03-8534-f5ba07e538c5/anim/welcome/large_2x.mp4#t=4.097679"></video>
+      <div className="video text-center" style={{ height: '834px', border: "2px solid red" }}>
+        <h1>here insert video</h1>
       </div>
 
       {/*section 1*/}
@@ -199,7 +200,7 @@ const Mac = () => {
             </SwiperSlide>
             <SwiperSlide>
               <button className="btn h-100 w-100">
-                <FaLaptopHouse className='fs-1'/>
+                <FaLaptopHouse className='fs-1' />
                 <h4>Customise Your Mac.</h4>
                 <h6 className="pt-3">Choose Your Chip, Memory, <br /> Storage, Even Colour</h6>
                 <FaCirclePlus className="add-icon text-dark" />
@@ -207,33 +208,80 @@ const Mac = () => {
             </SwiperSlide>
             <SwiperSlide>
               <button className="btn h-100 w-100">
-                <TbTruckDelivery className="fs-1"/>
+                <TbTruckDelivery className="fs-1" />
                 <h4>Get flexible delivery <br /> and easy pickup.</h4>
                 <h6 className="pt-3">Get free delivery or pickup at your <br /> Apple Store.</h6>
               </button>
             </SwiperSlide>
             <SwiperSlide>
               <button className="btn h-100 w-100">
-                <HiUsers className="fs-1"/>
+                <HiUsers className="fs-1" />
                 <h4>Get to Know Your <br /> new Mac.</h4>
                 <h6 className="pt-3">Learn how to get the most out of <br /> your new Mac with a free one-on- <br /> one Personal Session.</h6>
-              </button>
-            </SwiperSlide>
-            <SwiperSlide>
-              <button className="btn h-100 w-100">
-                <h4></h4>
-                <h6 className="pt-3"></h6>
-              </button>
-            </SwiperSlide>
-            <SwiperSlide>
-              <button className="btn h-100 w-100">
-                <h4></h4>
-                <h6 className="pt-3"></h6>
               </button>
             </SwiperSlide>
           </Swiper>
         </div>
       </section>
+
+      {/* section 5 */}
+      <section className="section-5 container mt-5 pt-5">
+        <h1>Singnificant Others.</h1>
+        <div className="d-flex sec5-info mt-5">
+          <div className="sec5-div h-100">
+            <Accordion className="h-100 w-100" defaultActiveKey='0'>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header><h3>Mac and iPhone</h3></Accordion.Header>
+                <Accordion.Body>
+                  You can answer calls or messages from <br /> your iPhone directly on your Mac. Copy <br /> images, video or text on your iPhone, <br /> then paste into another app on your <br /> nearby Mac. With iCloud, you can access <br /> your favourite files from either your <br /> iPhone or your Mac. And so much more.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header><h3>Mac and iPad</h3></Accordion.Header>
+                <Accordion.Body>
+                  Sketch on your iPad and have it appear <br /> instantly on your Mac. Or use your iPad as <br /> a second display, so you can work on one <br /> screen while you reference the other. You <br /> can even start a Final Cut Pro project on <br /> your iPad and continue it on your Mac.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header><h3>Mac and Apple Watch</h3></Accordion.Header>
+                <Accordion.Body>
+                  Automatically log in to your Mac when <br /> you’re wearing your Apple Watch with <br /> Auto Unlock. No password <br />typing required.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </div>
+          <div className="sec5-div">
+            <img src="https://i0.wp.com/s-store.ba/wp-content/uploads/2023/11/augment_watch__cob6bk2acmc2_large-1.jpg?fit=591%2C409&ssl=1" alt="" className="h-100 w-100" />
+          </div>
+        </div>
+      </section>
+
+      {/* section 6 */}
+      <section className="section-6 container mt-5 pt-5">
+        <div className="d-flex align-items-center justify-content-between">
+          <h1>Mac essentials.</h1>
+          <span className="text-primary">All Mac Accessories</span>
+        </div>
+        <div className="sec6-img text-center d-flex justify-content-between mt-5 align-items-center">
+          <div className="p-5">
+            <h4>Mac Accessories</h4>
+            <p>Explore keyboards, mice and other essentials.</p>
+            <span className="text-primary">Shop Mac Accessories <RiArrowDropRightLine /></span>
+            <div className="pt-5">
+              <img src="https://www.apple.com/v/mac/home/ca/images/overview/essentials/essentials_accessories__dglhsic54owi_large.jpg" alt="" className="w-100 h-100" />
+            </div>
+          </div>
+          <div className="p-5">
+            <h4>Sudtio Display</h4>
+            <p>The 68.9 cm (27") 5k Retina display pairs beautifully with any <br /> mac.</p>
+            <span className="text-primary">Learn more <RiArrowDropRightLine /></span>
+            <div className="pt-5">
+              <img src="https://www.apple.com/v/mac/home/ca/images/overview/essentials/essentials_display__bk3i351qm0c2_large.jpg" alt="" className="w-100 h-100"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <FooterComponent/>
     </div>
   );
 };
