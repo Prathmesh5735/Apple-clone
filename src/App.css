@@ -82,3 +82,13 @@ background: rgb(255, 68, 68) !important;
   -webkit-text-fill-color: transparent;
 }
 
+/* mac comp styling */
+.section-1 .sec1-img{
+  height: 680px;
+}
+.sec1-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius:50px;
+}
