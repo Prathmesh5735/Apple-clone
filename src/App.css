@@ -198,3 +198,9 @@
   height: 307px ;
   margin: auto;
 }
+
+/* ipad comp section 5 styling */
+.ipad-comp .section-5 .sec5-img{
+  width: 50%;
+  margin: auto;
+}
